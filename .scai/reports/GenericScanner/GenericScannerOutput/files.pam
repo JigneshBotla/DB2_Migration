@@ -1,0 +1,3 @@
+Path,Technology,FileKind,BinaryKind,Bytes,SupportedStatus
+/sales_demo.sql,SQL,SourceCodeFile,NotBinary,3610,DoesNotApply,DoesNotApply
+/input.wsp,Other,Other,Unknown,49,DoesNotApply,DoesNotApply

@@ -1,0 +1,3 @@
+FileName,Extension,Technology,Status,isBinary,Bytes,ContentType,ContentLines,CommentLines,BlankLines
+/sales_demo.sql,sql,SQL,OK,FALSE,3610,Code,61,36,50
+/input.wsp,wsp,Other,OK,UNKNOWN,49,Other,2,0,0

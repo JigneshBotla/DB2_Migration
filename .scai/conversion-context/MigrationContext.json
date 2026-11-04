@@ -1,0 +1,112 @@
+{
+  "SYMBOLS": [
+    {
+      "NAME": "\u0022CUSTOMERS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022SALES_DEMO\u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "customer_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "customer_name",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "VARCHAR",
+          "PRECISION": 100
+        }
+      ]
+    },
+    {
+      "NAME": "\u0022ORDERS\u0022",
+      "SYMBOLTYPE": "TABLE",
+      "SCHEMANAME": "\u0022SALES_DEMO\u0022",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": "order_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "customer_id",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "INTEGER"
+        },
+        {
+          "NAME": "order_date",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DATE"
+        },
+        {
+          "NAME": "amount",
+          "SYMBOLTYPE": "COLUMN",
+          "TYPE": "DECIMAL",
+          "PRECISION": 10,
+          "SCALE": 2
+        }
+      ]
+    },
+    {
+      "NAME": "FN_ORDER_COUNT",
+      "SYMBOLTYPE": "FUNCTION",
+      "RETURNTYPE": "INTEGER",
+      "SCHEMANAME": "SALES_DEMO",
+      "DATABASENAME": "",
+      "ISDETERMINISTIC": false,
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": []
+        },
+        {
+          "NAME": "p_customer_id",
+          "SYMBOLTYPE": "PARAMETER",
+          "TYPE": "INTEGER"
+        }
+      ]
+    },
+    {
+      "NAME": "V_CUSTOMER_SALES",
+      "SYMBOLTYPE": "VIEW",
+      "SCHEMANAME": "SALES_DEMO",
+      "DATABASENAME": "",
+      "INNERSYMBOLS": [
+        {
+          "NAME": null,
+          "SYMBOLTYPE": "QUERY",
+          "SELECTALL": false,
+          "TABLESALLSELECTED": [],
+          "INNERSYMBOLS": [
+            {
+              "NAME": "customer_id",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "INTEGER"
+            },
+            {
+              "NAME": "customer_name",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "VARCHAR",
+              "PRECISION": 100
+            },
+            {
+              "NAME": "order_count",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            },
+            {
+              "NAME": "total_sales",
+              "SYMBOLTYPE": "COLUMN",
+              "TYPE": "ExactNumeric"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

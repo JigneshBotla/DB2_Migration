@@ -1,0 +1,62 @@
+FileId,Keyword,Count
+/sales_demo.sql,=,8
+/sales_demo.sql,action,2
+/sales_demo.sql,add,4
+/sales_demo.sql,alter table,4
+/sales_demo.sql,as,3
+/sales_demo.sql,authorization,1
+/sales_demo.sql,by,2
+/sales_demo.sql,check,1
+/sales_demo.sql,coalesce,1
+/sales_demo.sql,commit,1
+/sales_demo.sql,connect,2
+/sales_demo.sql,constraint,2
+/sales_demo.sql,count,2
+/sales_demo.sql,create view,1
+/sales_demo.sql,create table,2
+/sales_demo.sql,create schema,1
+/sales_demo.sql,create function,1
+/sales_demo.sql,current,4
+/sales_demo.sql,data,1
+/sales_demo.sql,date,1
+/sales_demo.sql,decimal,1
+/sales_demo.sql,delete,1
+/sales_demo.sql,enable,2
+/sales_demo.sql,enforced,4
+/sales_demo.sql,foreign,1
+/sales_demo.sql,from,2
+/sales_demo.sql,group by,1
+/sales_demo.sql,in,2
+/sales_demo.sql,integer,5
+/sales_demo.sql,join,1
+/sales_demo.sql,key,1
+/sales_demo.sql,language,1
+/sales_demo.sql,left,1
+/sales_demo.sql,no,2
+/sales_demo.sql,not null,6
+/sales_demo.sql,on,3
+/sales_demo.sql,optimization,2
+/sales_demo.sql,organize,2
+/sales_demo.sql,path,2
+/sales_demo.sql,primary key,2
+/sales_demo.sql,query,2
+/sales_demo.sql,reads,1
+/sales_demo.sql,references,1
+/sales_demo.sql,reset,1
+/sales_demo.sql,return,1
+/sales_demo.sql,returns,1
+/sales_demo.sql,row,2
+/sales_demo.sql,schema,2
+/sales_demo.sql,select,2
+/sales_demo.sql,set,6
+/sales_demo.sql,sql,2
+/sales_demo.sql,sum,1
+/sales_demo.sql,sysibm,2
+/sales_demo.sql,terminate,1
+/sales_demo.sql,to,1
+/sales_demo.sql,update,1
+/sales_demo.sql,varchar,1
+/sales_demo.sql,where,1
+/sales_demo.sql,work,1
+/sales_demo.sql,*,1
+/sales_demo.sql,>=,1

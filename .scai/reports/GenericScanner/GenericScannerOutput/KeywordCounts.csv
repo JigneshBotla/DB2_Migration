@@ -1,0 +1,62 @@
+File,Technology,Keyword,Count
+/sales_demo.sql,SQL,=,8
+/sales_demo.sql,SQL,action,2
+/sales_demo.sql,SQL,add,4
+/sales_demo.sql,SQL,alter table,4
+/sales_demo.sql,SQL,as,3
+/sales_demo.sql,SQL,authorization,1
+/sales_demo.sql,SQL,by,2
+/sales_demo.sql,SQL,check,1
+/sales_demo.sql,SQL,coalesce,1
+/sales_demo.sql,SQL,commit,1
+/sales_demo.sql,SQL,connect,2
+/sales_demo.sql,SQL,constraint,2
+/sales_demo.sql,SQL,count,2
+/sales_demo.sql,SQL,create view,1
+/sales_demo.sql,SQL,create table,2
+/sales_demo.sql,SQL,create schema,1
+/sales_demo.sql,SQL,create function,1
+/sales_demo.sql,SQL,current,4
+/sales_demo.sql,SQL,data,1
+/sales_demo.sql,SQL,date,1
+/sales_demo.sql,SQL,decimal,1
+/sales_demo.sql,SQL,delete,1
+/sales_demo.sql,SQL,enable,2
+/sales_demo.sql,SQL,enforced,4
+/sales_demo.sql,SQL,foreign,1
+/sales_demo.sql,SQL,from,2
+/sales_demo.sql,SQL,group by,1
+/sales_demo.sql,SQL,in,2
+/sales_demo.sql,SQL,integer,5
+/sales_demo.sql,SQL,join,1
+/sales_demo.sql,SQL,key,1
+/sales_demo.sql,SQL,language,1
+/sales_demo.sql,SQL,left,1
+/sales_demo.sql,SQL,no,2
+/sales_demo.sql,SQL,not null,6
+/sales_demo.sql,SQL,on,3
+/sales_demo.sql,SQL,optimization,2
+/sales_demo.sql,SQL,organize,2
+/sales_demo.sql,SQL,path,2
+/sales_demo.sql,SQL,primary key,2
+/sales_demo.sql,SQL,query,2
+/sales_demo.sql,SQL,reads,1
+/sales_demo.sql,SQL,references,1
+/sales_demo.sql,SQL,reset,1
+/sales_demo.sql,SQL,return,1
+/sales_demo.sql,SQL,returns,1
+/sales_demo.sql,SQL,row,2
+/sales_demo.sql,SQL,schema,2
+/sales_demo.sql,SQL,select,2
+/sales_demo.sql,SQL,set,6
+/sales_demo.sql,SQL,sql,2
+/sales_demo.sql,SQL,sum,1
+/sales_demo.sql,SQL,sysibm,2
+/sales_demo.sql,SQL,terminate,1
+/sales_demo.sql,SQL,to,1
+/sales_demo.sql,SQL,update,1
+/sales_demo.sql,SQL,varchar,1
+/sales_demo.sql,SQL,where,1
+/sales_demo.sql,SQL,work,1
+/sales_demo.sql,SQL,*,1
+/sales_demo.sql,SQL,>=,1

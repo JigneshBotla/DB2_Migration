@@ -1,5 +1,7 @@
-code_source: local
-committed_setup_tasks: registerCode
+assessment_name: snowflake-migration-nov4
+assessment_options: none
+code_source: extract
+committed_setup_tasks: registerCode,convertCode
 dashboard_port: 7878
 entry_mode: fresh
 git_enabled: true
