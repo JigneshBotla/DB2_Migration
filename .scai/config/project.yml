@@ -7,3 +7,4 @@ created_at: 2026-11-04T10:14:40.6670550Z
 cloud_project_id: MIGRATION_PROJECT_cfaf0ddf_4523_47cd_828d_46f045319c79
 default_affinity: snowflake-migration-20261104101217-cfaf0ddf
 project_type: code_conversion_only
+enable_cloud_status: true

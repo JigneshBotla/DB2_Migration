@@ -1,0 +1,2 @@
+FILE_NAME,FILE_PATH,FILE_SIZE_BYTES,STATUS,STAGE,ERROR_MESSAGE
+sales_demo.sql,sales_demo.sql,3610,Processed,Succeeded,

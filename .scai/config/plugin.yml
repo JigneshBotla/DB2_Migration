@@ -1,9 +1,17 @@
+code_source: local
+committed_setup_tasks: registerCode
 dashboard_port: 7878
 entry_mode: fresh
-pending_git_main_branch: main
+git_enabled: true
+git_main_branch: main
+has_etl_code: 'false'
+has_power_bi: 'false'
+has_tableau: 'false'
+migration_extras: none
 project_dir_confirmed: 'true'
 run_mode: manual
 run_mode_confirmed: 'true'
+tailor_conversion_settings: 'false'
 tasks:
   applyRules:
     enabled: true
