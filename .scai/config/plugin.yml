@@ -1,7 +1,7 @@
 assessment_name: snowflake-migration-nov4
 assessment_options: none
 code_source: local
-committed_setup_tasks: registerCode,convertCode,configureSandboxProfile
+committed_setup_tasks: registerCode,convertCode,configureSandboxProfile,configureTesting
 dashboard_port: 7878
 entry_mode: fresh
 git_enabled: true
@@ -184,3 +184,4 @@ tasks:
     enabled: true
   verify:
     enabled: true
+testing_data_source: source_database
