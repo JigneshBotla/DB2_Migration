@@ -8,7 +8,8 @@
 -- varchar2 compatibility(varchar2_compat): OFF
 
 
-CONNECT TO TESTDB !!!RESOLVE EWI!!! /*** SSC-EWI-0073 - PENDING FUNCTIONAL EQUIVALENCE REVIEW FOR 'ToConnectionTarget' NODE ***/!!!;
+-- DB2 CLP session command, not applicable in Snowflake:
+-- CONNECT TO TESTDB;
 
 ------------------------------------------------
 -- DDL Statements for Schemas
@@ -16,7 +17,9 @@ CONNECT TO TESTDB !!!RESOLVE EWI!!! /*** SSC-EWI-0073 - PENDING FUNCTIONAL EQUIV
 
 
 /* <sc-schema>SALES_DEMO</sc-schema> */
-CREATE SCHEMA "SALES_DEMO" AUTHORIZATION "DB2INST1" !!!RESOLVE EWI!!! /*** SSC-EWI-0073 - PENDING FUNCTIONAL EQUIVALENCE REVIEW FOR 'CreateSchema' NODE ***/!!!;
+-- DB2 AUTHORIZATION "DB2INST1" dropped: Snowflake assigns schema ownership to the
+-- executing role. Grant explicitly afterwards if a different owner is required.
+CREATE SCHEMA IF NOT EXISTS "SALES_DEMO";
 
 
 
@@ -93,12 +96,15 @@ ALTER TABLE "SALES_DEMO"."ORDERS"
                                       ;
 
 /* <sc-table>SALES_DEMO.ORDERS</sc-table> */
-ALTER TABLE "SALES_DEMO"."ORDERS"
-	ADD
- 	   !!!RESOLVE EWI!!! /*** SSC-EWI-0035 - CHECK STATEMENT NOT SUPPORTED ***/!!! CONSTRAINT "SQL261104100421070" CHECK
-		(AMOUNT >= 0)
-	ENFORCED
-	ENABLE QUERY OPTIMIZATION;
+-- SSC-EWI-0035: Snowflake parses CHECK constraints but does not enforce them.
+-- Original DB2 rule on SALES_DEMO.ORDERS: AMOUNT >= 0 (constraint SQL261104100421070).
+-- Deploying it would advertise a rule Snowflake never applies, so it is disabled here.
+-- Enforce AMOUNT >= 0 in whatever loads this table, or add a data metric function.
+-- ALTER TABLE "SALES_DEMO"."ORDERS"
+--   ADD CONSTRAINT "SQL261104100421070" CHECK
+--     (AMOUNT >= 0)
+--   ENFORCED
+--   ENABLE QUERY OPTIMIZATION;
 
 
 
@@ -131,7 +137,7 @@ $$
 		COUNT(*)
 		      FROM
 		SALES_DEMO.ORDERS O
-		      WHERE O.CUSTOMER_ID = :P_CUSTOMER_ID
+          WHERE O.CUSTOMER_ID = P_CUSTOMER_ID
 $$;
 
 
@@ -163,9 +169,11 @@ GROUP BY C.CUSTOMER_ID, C.CUSTOMER_NAME;
 
 
 
-COMMIT WORK !!!RESOLVE EWI!!! /*** SSC-EWI-0073 - PENDING FUNCTIONAL EQUIVALENCE REVIEW FOR 'Commit' NODE ***/!!!;
+-- DDL in Snowflake autocommits; explicit COMMIT WORK is not needed:
+-- COMMIT WORK;
 
-CONNECT;
+-- DB2 CLP session commands, not applicable in Snowflake:
+-- CONNECT RESET;
 --         RESET
               ;
 -- ** SSC-EWI-0001 - UNRECOGNIZED TOKEN ON LINE '145' COLUMN '1' OF THE SOURCE CODE STARTING AT 'TERMINATE'. EXPECTED 'STATEMENT' GRAMMAR. LAST MATCHING TOKEN WAS ';' ON LINE '143' COLUMN '13'. **

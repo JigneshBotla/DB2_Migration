@@ -1,7 +1,7 @@
 assessment_name: snowflake-migration-nov4
 assessment_options: none
-code_source: extract
-committed_setup_tasks: registerCode,convertCode
+code_source: local
+committed_setup_tasks: registerCode,convertCode,configureSandboxProfile
 dashboard_port: 7878
 entry_mode: fresh
 git_enabled: true
@@ -13,6 +13,8 @@ migration_extras: none
 project_dir_confirmed: 'true'
 run_mode: manual
 run_mode_confirmed: 'true'
+sandbox_profile: db2_sandbox
+snowflake_database: TESTDB
 tailor_conversion_settings: 'false'
 tasks:
   applyRules:

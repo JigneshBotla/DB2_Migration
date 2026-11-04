@@ -1,0 +1,4 @@
+Function,Count,Category,MigrationStatus
+COALESCE,1,Built_In,Transformation
+SUM,1,Built_In,Transformation
+COUNT,2,Built_In,Transformation

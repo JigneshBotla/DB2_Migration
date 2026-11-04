@@ -1,0 +1,6 @@
+sql_object_id,file_path,sql_object_type,presence,line_number,lines_of_code,deployment_order
+"""SALES_DEMO""",sales_demo.sql,SCHEMA,BOTH,19,5,0
+"""SALES_DEMO"".""CUSTOMERS""",sales_demo.sql,TABLE,BOTH,29,9,0
+"""SALES_DEMO"".""ORDERS""",sales_demo.sql,TABLE,BOTH,52,11,0
+SALES_DEMO.FN_ORDER_COUNT(INTEGER),sales_demo.sql,FUNCTION,BOTH,110,10,1
+SALES_DEMO.V_CUSTOMER_SALES,sales_demo.sql,VIEW,BOTH,129,8,1

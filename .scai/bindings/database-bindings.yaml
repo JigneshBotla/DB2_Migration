@@ -1,0 +1,4 @@
+source:
+  TESTDB: "${testdb}"
+snow:
+  TESTDB: "<%testdb%>"
