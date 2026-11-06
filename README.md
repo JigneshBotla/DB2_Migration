@@ -81,6 +81,21 @@ manually. See sections 5 and 6.
 > **Warning:** `snowflake/` is generated output. Running `scai code convert`
 > again **overwrites these fixes**. If you re-convert, re-apply them.
 
+### Workflow rule: always push corrected code
+
+The generated SQL only becomes safe once it is committed. After every
+conversion and fix cycle:
+
+```bash
+git add snowflake/ source/
+git commit -m "Fix <what> in converted SQL"
+git push
+```
+
+Do this before moving on to deployment. Fixes that live only in a working
+directory are one re-conversion away from being lost, and nobody else can see
+what was corrected or why.
+
 ---
 
 ## 5. How to deploy the converted code
