@@ -3,6 +3,12 @@
 .scai/config/plugin.local.yml
 .scai/config/profiles.local.yaml
 
+# Session transcripts — may contain credentials typed into chat. Never commit.
+.scai/conversations/
+
+# Tool logs (local, machine-specific paths)
+logs/
+
 # Local Data Exchange Worker config
 .scai/config/dew_configuration.toml
 

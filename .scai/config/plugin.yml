@@ -3,6 +3,7 @@ assessment_options: none
 code_source: local
 committed_setup_tasks: registerCode,convertCode,configureSandboxProfile,configureTesting
 dashboard_port: 7878
+data_infra_intent: 'false'
 entry_mode: fresh
 git_enabled: true
 git_main_branch: main
@@ -155,7 +156,7 @@ tasks:
     enabled: true
     locked: true
   runAssessment:
-    enabled: true
+    enabled: false
   runTests:
     enabled: true
   seedScript:
